@@ -45,7 +45,12 @@ patch(Orderline.prototype, {
     onSelectionChangedUom(ev) {
             var uom_id = ev.target.value
             var selected_uom = this.env.services.pos.units_by_id[uom_id]
+            if(this.props.slots['product-name']){
             var selected_product = this.props.slots['product-name'].__ctx.line
+            }
+            else{
+            var selected_product= this.props.slots['default'].__ctx.line
+            }
             selected_product.set_uom({0:selected_uom.id,1:selected_uom.name})
             selected_product.price_type = "manual";
             if (selected_uom.uom_type == "smaller"){
