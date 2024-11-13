@@ -15,3 +15,8 @@
 #### Version 17.0.2.0.1
 ##### UPDT
 - Bug Fix - Hide the visibility add to cart and price
+
+#### 13.11.2024
+#### Version 17.0.3.0.0
+##### UPDT
+- Bug Fix - Fixed the error that occurred after installing the website_sale_stock module

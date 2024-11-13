@@ -19,7 +19,7 @@
     </template>
     <!--  Hide Add To Cart button for guest users  -->
     <template id="product" inherit_id="website_sale.product">
-        <xpath expr="//div[@id='o_wsale_cta_wrapper']" position="attributes">
+        <xpath expr="//div[@id='add_to_cart_wrap']" position="attributes">
             <attribute name="t-if">login_user == False</attribute>
         </xpath>
     </template>
