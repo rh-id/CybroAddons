@@ -51,13 +51,15 @@ class MrpWorkorder(models.Model):
             Boolean: Returns true
         """
         res = super(MrpWorkorder, self).button_start()
-        allocated_hours = int(self.duration_expected)
-        allocated_minutes = int((self.duration_expected - allocated_hours) * 60)
-        allocated_time_str = f"{allocated_hours:02d}:{allocated_minutes:02d}"
-        allocated_minutes_str, allocated_seconds_str = allocated_time_str.split(":")
-        allocated_minutes = int(allocated_minutes_str)
-        allocated_seconds = int(allocated_minutes_str)
-        total_allocated_hours = (allocated_minutes + allocated_seconds / 60) / 60
+        minutes = int(self.duration_expected)
+        seconds = int((self.duration_expected - minutes) * 60)
+        time_str = f"{minutes:02d}:{seconds:02d}"
+        minutes_str, seconds_str = time_str.split(":")
+        minutes = int(minutes_str)
+        seconds = int(seconds_str)
+        if seconds % 30 == 0:
+            minutes += (seconds // 30)
+        total_allocated_hours = minutes / 60
         project = self.env['project.project'].search(
             [('name', '=', ("MO: {}".format(self.production_id.name)))])
         if project:
