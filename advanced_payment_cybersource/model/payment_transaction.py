@@ -4,7 +4,7 @@
 #    Cybrosys Technologies Pvt. Ltd.
 #
 #    Copyright (C) 2024-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
-#    Author: Aysha Shalin (<odoo@cybrosys.com>)
+#    Author: Cybrosys Techno Solutions(<https://www.cybrosys.com>)
 #
 #    You can modify it under the terms of the GNU LESSER
 #    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
@@ -86,21 +86,19 @@ class PaymentTransaction(models.Model):
         state = notification_data['simulated_state']
         if state == 'pending':
             self._set_pending()
-        elif state == 'done':
+        elif state == 'AUTHORIZED':
             if self.capture_manually and not notification_data.get(
                     'manual_capture'):
                 self._set_authorized()
             else:
                 self._set_done()
-                # Immediately post-process the transaction if it is a refund, as
-                # the post-processing
-                # will not be triggered by a customer browsing the transaction
-                # from the portal.
                 if self.operation == 'refund':
                     self.env.ref(
                         'payment.cron_post_process_payment_tx')._trigger()
-        elif state == 'cancel':
-            self._set_canceled()
-        else:  # Simulate an error state.
+        elif state == 'DECLINED':
+            message = notification_data.get('message', 'No message provided')
+            self._set_canceled(
+                state_message=f"Payment canceled due to: {message}")
+        else:
             self._set_error(
-                _("You selected the following demo payment status: %s", state))
+                _("You selected the following payment status: %s", state))

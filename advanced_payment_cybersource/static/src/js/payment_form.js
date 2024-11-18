@@ -10,11 +10,15 @@ paymentForm.include({
         if (providerCode !== 'cybersource') {
             return this._super(...arguments);
         }
-        var customerInputNumber = parseInt($('#customer_input_number').val());
+        var customerInputNumber = $('#customer_input_number').val();
         const customerInputName = $('#customer_input_name').val();
         const expMonth = $('#customer_input_month').val();
         const expYear = $('#customer_input_year').val();
+        const cvv = $('#customer_input_cvv').val();
         var self = this;
+        let currentDate = new Date();
+        let previousMonth = new Date();
+        previousMonth.setMonth(currentDate.getMonth() - 1);
         // Display error if card number is null
         if(customerInputNumber == "") {
             this._displayErrorDialog(
@@ -23,7 +27,7 @@ paymentForm.include({
             );
         }
         // Display error if card is expired
-        else if(expYear <= 2022) {
+        else if (expYear <= previousMonth.getFullYear() && currentDate.getMonth() <= previousMonth.getMonth()) {
             var self = this;
             self._displayErrorDialog(
                 _t("Server Error"),
@@ -49,6 +53,7 @@ paymentForm.include({
                         'exp_month': expMonth,
                         'name':customerInputName,
                         'card_num':customerInputNumber,
+                        'cvv':cvv,
                     },
                     'values':{
                         'amount': processingValues.amount,

@@ -6,6 +6,10 @@ Odoo CyberSource Payment Gateway
 ================================
 This module is used to make payments using Cybersource payment provider from website shop.
 
+Installation
+============
+* Install external python packages cybersource-rest-client-python.
+
 Configuration
 =============
 * No Additional configuration is needed.
