@@ -243,6 +243,7 @@ export const NavigationScroll = PublicWidget.Widget.extend({
                 { x: "0%", opacity: 1, ease: "power1.in" },  // End state (opacity 1)
                 "<.5"  // Overlap with previous animation
           );
+
     },
     _hero_animation(){
       const letters = document.querySelectorAll(".text span");
@@ -254,6 +255,7 @@ export const NavigationScroll = PublicWidget.Widget.extend({
         ease: "power2.out", // Easing for smooth effect
         stagger: 0.1, // Delay between each letter
       });
+
       gsap.registerPlugin(); // No need for ScrollTrigger
 
     class RevealOnLoad {
@@ -292,6 +294,7 @@ export const NavigationScroll = PublicWidget.Widget.extend({
     _handleScroll: function () {
         // Method to handle scroll event and change the navigation style based on scroll position
         const currentPath = window.location.pathname;
+
 
         // Handle navigation class additions
         if (this.$el.scrollTop() > 0) {

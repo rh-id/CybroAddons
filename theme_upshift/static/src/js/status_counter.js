@@ -11,6 +11,7 @@ export const themeIndex = PublicWidget.Widget.extend({
     // The 'start' method is called when the widget is initialized
     start(){
         this.counters = this.$el;
+
     },
     // Method to handle the scroll event
     _handleScroll: function () {
@@ -49,4 +50,3 @@ export const themeIndex = PublicWidget.Widget.extend({
  })
  // Register the widget so it can be used on the website
  PublicWidget.registry.themeIndex = themeIndex
-

@@ -454,6 +454,7 @@ template {
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 10px;
+  color: var(--black-color);
 }
 .services-section .wrapper .services-grid .service-card p {
   font-size: 16px;
@@ -568,6 +569,7 @@ template {
   font-size: 20px;
   font-weight: 500;
   padding-bottom: 10px;
+  color: var(--black-color);
 }
 .process-section .wrapper .process-grid .service-card p {
   font-size: 16px;
@@ -679,6 +681,9 @@ template {
 .locations_section .wrapper {
   padding-top: 40px;
 }
+.locations_section .wrapper .location{
+    color:black;
+}
 .locations_section .leaflet-control-attribution {
   display: none !important;
 }
@@ -778,6 +783,8 @@ padding-top:50px
   font-size: 2.6rem;
   font-weight: 500;
   margin-bottom: 10px;
+  color: var(--black-color);
+
 }
 
 .goals {

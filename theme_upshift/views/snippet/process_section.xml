@@ -13,19 +13,16 @@
                         <div class="service-card anime_card2">
                             <div class="ich_wrapper">
                                 <div class="service-icon icon-bg-1">
-                                    <img src="/theme_upshift/static/src/img/
-                                    icons/line/add-browser.svg"
+                                    <img src="/theme_upshift/static/src/img/icons/line/add-browser.svg"
                                          alt=""/>
                                 </div>
                                 <h3>Initial Consultation</h3>
                             </div>
-
                             <p>Lorem ipsum is simply dummy text.</p>
                         </div>
                         <div class="service-card anime_card2">
                             <div class="service-icon icon-bg-2">
-                                <img src="/theme_upshift/static/src/img/icons/
-                                line/add-desktop.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-desktop.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -35,8 +32,7 @@
                         </div>
                         <div class="service-card anime_card2">
                             <div class="service-icon icon-bg-3">
-                                <img src="/theme_upshift/static/src/img/icons
-                                /line/add-email.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-email.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -46,8 +42,7 @@
                         </div>
                         <div class="service-card anime_card2">
                             <div class="service-icon icon-bg-4">
-                                <img src="/theme_upshift/static/src/img/icons
-                                /line/add-folder.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-folder.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -57,8 +52,7 @@
                         </div>
                         <div class="service-card anime_card2">
                             <div class="service-icon icon-bg-5">
-                                <img src="/theme_upshift/static/src/img/icons
-                                /line/add-note.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-note.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -68,8 +62,7 @@
                         </div>
                         <div class="service-card anime_card2">
                             <div class="service-icon icon-bg-6">
-                                <img src="/theme_upshift/static/src/img/icons
-                                /line/add-photo-camera.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-photo-camera.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -104,5 +97,3 @@
         </xpath>
     </template>
 </odoo>
-
-

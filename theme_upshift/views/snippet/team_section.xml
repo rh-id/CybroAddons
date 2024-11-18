@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-<!--    Template for team section snippet-->
+    <!--    Template for team section snippet-->
     <template id="team_section" name="Team Section">
         <section class="our_team">
             <div class="section_heading">
@@ -12,8 +12,7 @@
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="team_wrapper">
                                 <div class="img_wrapper">
-                                    <img src="/theme_upshift/static/src/img
-                                    /about/team1.png"
+                                    <img src="/theme_upshift/static/src/img//about/team1.png"
                                          alt=""/>
                                     <ul class="icon_wrapp">
                                         <li>
@@ -54,17 +53,16 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="info">
-                                    <h6>Esther Howards</h6>
-                                    <p>Founder and CEO</p>
+                                <div class="info  mt-3" style="float:left;">
+                                    <h6 style="color:black; text-align:left;">Esther Howards</h6>
+                                    <p style="color:black; text-align:left;">Founder and CEO</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="team_wrapper">
                                 <div class="img_wrapper">
-                                    <img src="/theme_upshift/static/src/img
-                                    /about/team2.png"
+                                    <img src="/theme_upshift/static/src/img/about/team2.png"
                                          alt=""/>
                                     <ul class="icon_wrapp">
                                         <li>
@@ -105,10 +103,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="info">
-                                    <h6>Esther Howards</h6>
-                                    <p>Founder and CEO</p>
+                                <div class="info  mt-3" style="float:left;">
+                                    <h6 style="color:black; text-align:left;">Esther Howards</h6>
+                                    <p style="color:black; text-align:left;">Founder and CEO</p>
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-12">
@@ -155,9 +154,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="info">
-                                    <h6>Esther Howards</h6>
-                                    <p>Founder and CEO</p>
+                                <div class="info  mt-3" style="float:left;">
+                                    <h6 style="color:black; text-align:left;">Esther Howards</h6>
+                                    <p style="color:black; text-align:left;">Founder and CEO</p>
                                 </div>
                             </div>
                         </div>

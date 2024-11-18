@@ -12,8 +12,7 @@
                     <div class="services-grid anime_grid">
                         <div class="service-card anime_card">
                             <div class="service-icon icon-bg-1">
-                                <img src="/theme_upshift/static/src/img/icons
-                                /line/add-browser.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-browser.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -23,8 +22,7 @@
                         </div>
                         <div class="service-card anime_card">
                             <div class="service-icon icon-bg-2 box2">
-                                <img src="/theme_upshift/static/src/img/icons
-                                /line/add-desktop.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-desktop.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -34,8 +32,7 @@
                         </div>
                         <div class="service-card anime_card">
                             <div class="service-icon icon-bg-3">
-                                <img src="/theme_upshift/static/src/img/icons
-                                /line/add-email.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-email.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -55,8 +52,7 @@
                         </div>
                         <div class="service-card anime_card">
                             <div class="service-icon icon-bg-5">
-                                <img src="/theme_upshift/static/src/img/icons
-                                /line/add-note.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-note.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -66,8 +62,7 @@
                         </div>
                         <div class="service-card anime_card">
                             <div class="service-icon icon-bg-6">
-                                <img src="/theme_upshift/static/src/img/icons
-                                /line/add-photo-camera.svg"
+                                <img src="/theme_upshift/static/src/img/icons/line/add-photo-camera.svg"
                                      alt=""/>
                             </div>
                             <h3>Strategic Planning &amp; Business
@@ -89,5 +84,3 @@
         </xpath>
     </template>
 </odoo>
-
-
