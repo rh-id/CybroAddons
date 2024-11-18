@@ -19,3 +19,8 @@
 #### Version 17.0.1.0.3
 ##### UPDT
 - Bug Fix-Resolved the Aged Partner Balance Report.
+
+#### 16.11.2024
+#### Version 17.0.1.0.4
+##### FIX
+- Bug Fix-Resolved displaying payment badge when confirming the invoice.
