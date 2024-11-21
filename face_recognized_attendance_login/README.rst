@@ -8,14 +8,7 @@ Face Recognized Attendance Login
 
 Configuration
 =============
-Opencv [version: 4.8.1.78]
-numpy  [version: 1.26.2]
-Pillow [version: 9.0.1]
-cmake  [version: 3.27.7]
-dlib [version: 19.24.2]
-face-recognition [version: 1.2.3]
-
-Please ensure the camera access also.
+Please ensure the camera access.
 
 Installation
 ============

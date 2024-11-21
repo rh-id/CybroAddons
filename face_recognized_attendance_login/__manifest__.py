@@ -21,7 +21,7 @@
 #############################################################################
 {
     'name': 'Face Recognized Attendance Login',
-    'version': '17.0.1.0.0',
+    'version': '17.0.2.0.0',
     'category': 'Human Resources',
     'summary': """Mark the attendance of employee by recognizing their face""",
     'description': """This module introduces a face recognition system in the 
@@ -32,9 +32,12 @@
     'maintainer': 'Cybrosys Techno Solutions',
     'website': "https://www.cybrosys.com",
     'depends': ['base', 'mail', 'hr_attendance'],
-    'external_dependencies': {
-        'python': ['face-recognition', 'cmake', 'dlib', 'PIL',
-                   'numpy', 'opencv-python'],
+    'assets': {
+        'hr_attendance.assets_public_attendance': [
+            'face_recognized_attendance_login/static/src/js/face-api.min.js',
+            'face_recognized_attendance_login/static/src/xml/face_recognition_template.xml',
+            'face_recognized_attendance_login/static/src/js/face_recognition.js',
+        ]
     },
     'images': ['static/description/banner.jpg'],
     'license': 'LGPL-3',
